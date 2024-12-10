@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão09</title>
+</head>
+<body>
+    <script>
+        function encontrarMaisNova() {
+  const pessoas = [];
+
+  for (let i = 0; i < 10; i++) {
+    const nome = prompt("Digite o nome da pessoa:");
+    const idade = parseInt(prompt("Digite a idade de:"));
+    pessoas.push({ nome, idade });
+  }
+
+  let maisNova = pessoas[0];
+
+  for (let i = 1; i < pessoas.length; i++) {
+    if (pessoas[i].idade < maisNova.idade) {
+      maisNova = pessoas[i];
+    }
+  }
+
+  alert("A pessoa mais nova é:", maisNova.nome);
+}
+
+encontrarMaisNova();
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão02</title>
+</head>
+<body>
+    <script>
+       function SomadosNumeros(NumeroInicial, NumeroFinal, Razao) {
+        let soma = 0
+
+        for (let NumeroAtual = NumeroInicial; NumeroAtual <= NumeroFinal; NumeroAtual += Razao ) {
+            soma += NumeroAtual;
+            
+        }
+        return soma;
+       }
+       alert(SomadosNumeros(1, 15, 1));
+    </script>
+</body>
+</html>
